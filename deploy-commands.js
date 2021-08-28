@@ -5,8 +5,9 @@ const { clientId, guildId, token } = require('./config.json');
 
 const commands = [
 	new SlashCommandBuilder().setName('ping').setDescription('Replies with pong!'),
-	new SlashCommandBuilder().setName('server').setDescription('Replies with server info!'),
-	new SlashCommandBuilder().setName('user').setDescription('Replies with user info!'),
+	new SlashCommandBuilder().setName('minecraft').setDescription('Starts MINECRAFT!'),
+    new SlashCommandBuilder().setName('neincraft').setDescription('Stops minecraft :\'('),
+	new SlashCommandBuilder().setName('status').setDescription('Check server status')
 ]
 	.map(command => command.toJSON());
 
